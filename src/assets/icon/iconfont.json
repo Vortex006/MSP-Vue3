@@ -1,0 +1,72 @@
+{
+  "id": "3525430",
+  "name": "msp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "医疗服务平台msp的阿里巴巴图标库",
+  "glyphs": [
+    {
+      "icon_id": "145457",
+      "name": "医院",
+      "font_class": "yiyuan",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "742358",
+      "name": "医院",
+      "font_class": "yiyuan1",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "1411085",
+      "name": "2医院",
+      "font_class": "yiyuan2",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "2932868",
+      "name": "医院",
+      "font_class": "yiyuan3",
+      "unicode": "e80e",
+      "unicode_decimal": 59406
+    },
+    {
+      "icon_id": "5434086",
+      "name": "医院管理",
+      "font_class": "yiyuanguanli",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "8288897",
+      "name": "医院",
+      "font_class": "yiyuan4",
+      "unicode": "e859",
+      "unicode_decimal": 59481
+    },
+    {
+      "icon_id": "17605460",
+      "name": "医院",
+      "font_class": "yiyuan5",
+      "unicode": "e811",
+      "unicode_decimal": 59409
+    },
+    {
+      "icon_id": "18170805",
+      "name": "医院",
+      "font_class": "hospital-full",
+      "unicode": "e9e8",
+      "unicode_decimal": 59880
+    },
+    {
+      "icon_id": "22611516",
+      "name": "医院",
+      "font_class": "yiyuan6",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    }
+  ]
+}
