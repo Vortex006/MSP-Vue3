@@ -1,7 +1,16 @@
 <script setup>
-import { reactive, ref } from "vue";
+import { onMounted, reactive, ref } from "vue";
 import { useRouter } from "vue-router";
-
+import { useLoginStore } from "@/data/login.js";
+onMounted(async () => {
+  await getCodeImg();
+});
+const LoginStore = useLoginStore();
+const codeUrl = ref("");
+const getCodeImg = async () => {
+  await LoginStore.getCodeImg();
+  codeUrl.value = LoginStore.codeImgData;
+};
 const loginForm = reactive({
   userName: "",
   password: "",
@@ -70,7 +79,6 @@ const toRegister = () => {
           auto-complete="off"
           placeholder="账号"
         >
-          <!-- <svg-icon slot="prefix" icon-class="user" class="input-icon" /> -->
         </el-input>
       </el-form-item>
       <el-form-item prop="password">
@@ -81,7 +89,6 @@ const toRegister = () => {
           placeholder="密码"
           @keyup.enter.native="handleLogin"
         >
-          <!-- <svg-icon slot="prefix" icon-class="password" class="input-icon" /> -->
         </el-input>
       </el-form-item>
       <el-form-item prop="code" v-if="IsEnabledCode">
@@ -92,13 +99,12 @@ const toRegister = () => {
           style="width: 63%"
           @keyup.enter.native="handleLogin"
         >
-          <!-- <svg-icon slot="prefix" icon-class="validCode" class="input-icon" /> -->
         </el-input>
         <div class="login-code">
           <img
             :src="codeUrl"
             alt="加载失败"
-            @click="getCode"
+            @click="getCodeImg"
             class="login-code-img"
           />
         </div>

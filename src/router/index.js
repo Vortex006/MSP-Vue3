@@ -7,6 +7,7 @@ import Register from "@/layout/Register.vue";
 import HomePage from "@/views/HomePage.vue";
 import UserManage from "@/views/UserManage.vue";
 import RoomManage from "@/views/RoomManage.vue";
+import Demo from "../components/demo.vue";
 
 import SaveUser from "@/components/User/SaveUser.vue";
 import UpdateUser from "@/components/User/UpdateUser.vue";
@@ -17,7 +18,7 @@ import UpdateRoom from "@/components/Room/UpdateRoom.vue";
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: "/", redirect: "/register" },
+    { path: "/", redirect: "/home/dd" },
     {
       path: "/Home",
       component: Home,
@@ -49,6 +50,10 @@ const router = createRouter({
         {
           path: "/Home/UpdateRoom",
           component: UpdateRoom,
+        },
+        {
+          path: "/Home/dd",
+          component: Demo,
         },
       ],
     },
